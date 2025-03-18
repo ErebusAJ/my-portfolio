@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
         <div className="flex justify-center md:justify-end animate-fade-in transition-all duration-500 hover:scale-105">
           <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl transition-all duration-300">
             <img
-              src="./public/profile.jpeg"
+              src="/profile.jpeg"
               alt="Profile"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
             />
