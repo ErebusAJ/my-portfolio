@@ -62,8 +62,8 @@ const About: React.FC = () => {
     { id: 4, name: "Linux", icon: FaLinux, color: "#FCC624" },
     { id: 5, name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
     { id: 6, name: "MySQL", icon: SiMysql, color: "#4479A1" },
-    { id: 7, name: "Git & GitHub", icon: FaGithub, color: "#F1502F" },
-    { id: 8, name: "Django", icon: SiDjango, color: "#092E20" },
+    { id: 7, name: "Git & GitHub", icon: FaGithub, color: "#092E20" },
+    { id: 8, name: "Django", icon: SiDjango, color: "#009688" },
     { id: 9, name: "Flutter", icon: SiFlutter, color: "#02569B" },
     { id: 10, name: "Dart", icon: SiDart, color: "#0175C2" },
     { id: 11, name: "Android Studio", icon: SiAndroidstudio, color: "#3DDC84" },
@@ -71,8 +71,8 @@ const About: React.FC = () => {
     { id: 13, name: "C++", icon: SiCplusplus, color: "#00599C" },
     { id: 14, name: "Python", icon: SiPython, color: "#306998" },
     { id: 15, name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
-  { id: 16, name: "Keras", icon: SiKeras, color: "#D00000" },
-  { id: 17, name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
+    { id: 16, name: "Keras", icon: SiKeras, color: "#D00000" },
+    { id: 17, name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
   ];
 
   const aboutData = {
