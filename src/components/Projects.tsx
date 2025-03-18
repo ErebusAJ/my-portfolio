@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       title: "Yatra-Bandhu",
       description: "A full-featured app with AI Travel planner, travel buddy and local guide connect.",
       techStack: ["Go", "PostgresSQL", "RestAPI", "Docker", "Cloudflare", "Git"],
-      image: "./assets/yatrabandhu.png",
+      image: "./public/yatrabandhu.png",
       liveLink: "#",
       repoLink: "https://github.com/ErebusAJ/nith-yatra-bandhu"
     },
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       title: "Portfolio Website",
       description: "A task management application with drag-and-drop functionality, team collaboration, and real-time updates.",
       techStack: ["React", "HTML", "CSS", "Js", "Git"],
-      image: "./assets/portfolio.png",
+      image: "./public/portfolio.png",
       liveLink: "#",
       repoLink: "#"
     }
