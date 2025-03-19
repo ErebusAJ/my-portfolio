@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState }  from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -17,10 +17,11 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false); 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    setLoading(true);
     const formData = {
       name: (e.currentTarget.elements.namedItem("name") as HTMLInputElement).value,
       email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement).value,
@@ -55,6 +56,8 @@ const Contact: React.FC = () => {
         style: {backgroundColor: "#28a745", color: "#ffff" },
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
+    } finally {
+      setLoading(false); // Set loading back to false when request is done
     }
   };
 
@@ -161,6 +164,7 @@ const Contact: React.FC = () => {
                   <Button
                     type="submit"
                     className="w-full bg-portfolio-primary hover:bg-blue-600"
+                    disabled={loading}
                   >
                     Send Message
                   </Button>
