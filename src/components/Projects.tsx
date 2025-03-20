@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
     {
       id: 3,
       title: "Portfolio Website",
-      description: "A task management application with drag-and-drop functionality, team collaboration, and real-time updates.",
+      description: "A react based portfolio website showcasing my skills, projects and more.",
       techStack: ["React", "HTML", "CSS", "Js", "Git"],
       image: "/portfolio.png",
       liveLink: "#",
