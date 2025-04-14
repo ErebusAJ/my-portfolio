@@ -22,9 +22,10 @@ import {
   FaGofore,
   FaDocker,
   FaLinux,
-  FaPython
+  FaPython,
+  FaMicrosoft
 } from 'react-icons/fa';
-import { SiTypescript, SiGraphql, SiMongodb, SiTailwindcss, SiFlutter, SiDjango, SiPostgresql, SiDart, SiCplusplus, SiMysql, SiAndroidstudio, SiPython, SiSwagger, SiTensorflow, SiKeras, SiPytorch } from 'react-icons/si';
+import { SiTypescript, SiGraphql, SiMongodb, SiTailwindcss, SiFlutter, SiDjango, SiPostgresql, SiDart, SiCplusplus, SiMysql, SiAndroidstudio, SiPython, SiSwagger, SiTensorflow, SiKeras, SiPytorch, SiAmazonwebservices, SiGooglecloud, SiJenkins, SiGrafana } from 'react-icons/si';
 
 type AboutTab = 'education' | 'skills' | 'about';
 
@@ -63,17 +64,25 @@ const About: React.FC = () => {
     { id: 5, name: "PostgreSQL", icon: SiPostgresql, color: "#336791" },
     { id: 6, name: "MySQL", icon: SiMysql, color: "#4479A1" },
     { id: 7, name: "Git & GitHub", icon: FaGithub, color: "#092E20" },
-    { id: 8, name: "Django", icon: SiDjango, color: "#009688" },
-    { id: 9, name: "Flutter", icon: SiFlutter, color: "#02569B" },
-    { id: 10, name: "Dart", icon: SiDart, color: "#0175C2" },
-    { id: 11, name: "Android Studio", icon: SiAndroidstudio, color: "#3DDC84" },
-    { id: 12, name: "Figma", icon: FaFigma, color: "#F24E1E" },
-    { id: 13, name: "C++", icon: SiCplusplus, color: "#00599C" },
-    { id: 14, name: "Python", icon: SiPython, color: "#306998" },
-    { id: 15, name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
-    { id: 16, name: "Keras", icon: SiKeras, color: "#D00000" },
-    { id: 17, name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
+    { id: 8, name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },
+    { id: 9, name: "Microsoft Azure", icon: FaMicrosoft, color: "#0078D4" },
+    { id: 10, name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
+    { id: 11, name: "Jenkins", icon: SiJenkins, color: "#D24939" },
+    { id: 12, name: "Grafana", icon: SiGrafana, color: "#F46800" },
+    { id: 13, name: "Loki", icon: SiGrafana, color: "#0E1E25" }, 
+    { id: 14, name: "Promtail", icon: SiGrafana, color: "#745e9d" }, 
+    { id: 15, name: "Django", icon: SiDjango, color: "#009688" },
+    { id: 16, name: "Flutter", icon: SiFlutter, color: "#02569B" },
+    { id: 17, name: "Dart", icon: SiDart, color: "#0175C2" },
+    { id: 18, name: "Android Studio", icon: SiAndroidstudio, color: "#3DDC84" },
+    { id: 19, name: "Figma", icon: FaFigma, color: "#F24E1E" },
+    { id: 20, name: "C++", icon: SiCplusplus, color: "#00599C" },
+    { id: 21, name: "Python", icon: SiPython, color: "#306998" },
+    { id: 22, name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
+    { id: 23, name: "Keras", icon: SiKeras, color: "#D00000" },
+    { id: 24, name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
   ];
+  
 
   const aboutData = {
     bio: "I'm a passionate backend developer with over 2 years of experience in building scalable, high-performance applications. My journey in development started when I built my first backend system for a hackathon project in my CS 1st year, and since then, I’ve been fascinated by crafting efficient, reliable, and secure architectures.",

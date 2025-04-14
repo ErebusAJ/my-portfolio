@@ -18,6 +18,15 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Budget-Breezer",
+      description: "An mobile app for expense tracking, bill splitting, and payments effortlessly",
+      techStack: ["Go", "PostgresSQL", "Docker", "AWS",  "Jenkins", "Grafana", "Flutter"],
+      image: "/budget-breezer-site.png",
+      liveLink: "https://budget-breezer.vercel.app/",
+      repoLink: "https://github.com/ErebusAJ/budget-Breezer-web"
+    },
+    {
+      id: 2,
       title: "Yatra-Bandhu",
       description: "A full-featured app with AI Travel planner, travel buddy and local guide connect.",
       techStack: ["Go", "PostgresSQL", "RestAPI", "Docker", "Cloudflare", "Git"],
@@ -26,7 +35,7 @@ const Projects: React.FC = () => {
       repoLink: "https://github.com/ErebusAJ/nith-yatra-bandhu"
     },
     {
-      id: 2,
+      id: 3,
       title: "Skin Sage",
       description: "Illuminating Paths to Healthier Skin, Brighter Lives.",
       techStack: ["Django", "MySQL", "Tensorflow", "Python", "Git"],
@@ -35,7 +44,7 @@ const Projects: React.FC = () => {
       repoLink: "https://github.com/ErebusAJ/SkinSage"
     },
     {
-      id: 3,
+      id: 4,
       title: "Portfolio Website",
       description: "A react based portfolio website showcasing my skills, projects and more.",
       techStack: ["React", "HTML", "CSS", "Js", "Git"],
@@ -161,8 +170,8 @@ const Projects: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
-                    ? 'w-6 bg-portfolio-primary dark:bg-blue-500'
-                    : 'bg-gray-300 dark:bg-gray-600'
+                  ? 'w-6 bg-portfolio-primary dark:bg-blue-500'
+                  : 'bg-gray-300 dark:bg-gray-600'
                   }`}
                 aria-label={`Go to project ${index + 1}`}
               />
