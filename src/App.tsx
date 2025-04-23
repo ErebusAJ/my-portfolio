@@ -8,7 +8,6 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const queryClient = new QueryClient();
 
@@ -28,7 +27,6 @@ const App = () => (
       </ThemeProvider>
     </TooltipProvider>
     <Analytics />
-    < SpeedInsights />
   </QueryClientProvider>
 );
 
