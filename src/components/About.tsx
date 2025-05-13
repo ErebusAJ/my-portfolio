@@ -85,7 +85,7 @@ const About: React.FC = () => {
   
 
   const aboutData = {
-    bio: "I'm a passionate backend developer with over 2 years of experience in building scalable, high-performance applications. My journey in development started when I built my first backend system for a hackathon project in my CS 1st year, and since then, I’ve been fascinated by crafting efficient, reliable, and secure architectures.",
+    bio: "I'm a backend developer with over 2 years of experience in building scalable, high-performance applications. My journey in development started when I built my first backend system for a hackathon project in my CS 1st year, and since then, I’ve been fascinated by crafting efficient, reliable, and secure architectures.",
     experience: "I've worked on personal and team projects, designing robust APIs, optimizing databases, and ensuring seamless system integrations and containerization. My approach combines technical excellence with problem-solving, ensuring that backend systems are not just powerful but also scalable and maintainable.",
     interests: "When I'm not coding, you’ll find me exploring automation workflows, diving into system design concepts, or optimizing performance bottlenecks. I also enjoy gym, watching sci-fi movies, and experimenting with new recipes.",
     philosophy: "I believe that great software is built on a foundation of clean architecture and efficient performance. My goal is to develop backend systems that are fast, scalable, and secure, empowering businesses to deliver exceptional digital experiences."
