@@ -28,18 +28,18 @@ const Services: React.FC = () => {
     },
     {
       id: 3,
+      title: "DevOps",
+      description: "Streamline your development pipeline with automated workflows, continuous integration, and efficient deployment strategies.",
+      icon: Sparkle,
+      color: "bg-pink-100 text-pink-600"
+    },
+    {
+      id: 4,
       title: "ML Models",
       description: "Unlock the power of machine learning with custom models that turn raw data into accurate, predictable models.",
       icon: Sparkle,
       color: "bg-green-100 text-green-600"
     },
-    {
-      id: 4,
-      title: "UI/UX Design",
-      description: "User-centered design that balances beautiful aesthetics with intuitive functionality and accessibility.",
-      icon: LineChart,
-      color: "bg-pink-100 text-pink-600"
-    }
   ];
 
   return (
