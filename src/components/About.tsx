@@ -203,7 +203,7 @@ const About: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 mt-6 sm:mt-10">
           {/* Left column - Buttons: flex-row on mobile, flex-col on md+ */}
-          <div className="md:col-span-3 flex flex-row md:flex-col gap-2 sm:gap-4 overflow-x-auto pb-2 md:pb-0 md:overflow-x-visible">
+          <div className="md:col-span-3 flex flex-col gap-2 sm:gap-4">
             {tabItems.map((tab) => {
               const IconComponent = tab.icon;
               const isActive = activeTab === tab.value;
@@ -212,13 +212,11 @@ const About: React.FC = () => {
                   key={tab.value}
                   onClick={() => setActiveTab(tab.value)}
                   variant={isActive ? 'default' : 'outline'}
-                  // Preserved original button styling classes
                   className={cn(
-                    "justify-start text-left w-full md:w-full min-w-max md:min-w-0 transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base",
+                    "justify-start text-left w-full transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base",
                     isActive
-                      ? 'bg-portfolio-primary text-primary-foreground dark:bg-blue-600 dark:text-white' // Assuming primary-foreground for light active text
-                      : 'border-portfolio-primary text-portfolio-primary dark:border-blue-400 dark:text-blue-400 hover:bg-portfolio-primary/10 dark:hover:bg-blue-400/10',
-                      "flex-shrink-0" // Prevents buttons from shrinking too much in flex-row
+                      ? 'bg-portfolio-primary text-primary-foreground dark:bg-blue-600 dark:text-white'
+                      : 'border-portfolio-primary text-portfolio-primary dark:border-blue-400 dark:text-blue-400 hover:bg-portfolio-primary/10 dark:hover:bg-blue-400/10'
                   )}
                 >
                   <IconComponent className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
